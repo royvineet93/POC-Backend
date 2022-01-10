@@ -1,0 +1,161 @@
+{
+    "localhost:5000/api/v1/users/signup": {
+        "user": {
+            "firstName": "anurag",
+            "lastName": "pandey",
+            "password": "anurag@123",
+            "passwordConfirm": "anurag@123",
+            "email": "anuragpandey73942@gmail.com"
+        },
+        "profile": {
+            "companyName": "abc",
+            "country": "India",
+            "city": "delhi"
+        }
+    },
+    "localhost:5000/api/v1/users/login": {
+        "email": "anuragpandey7394@gmail.com",
+        "password": "anurag@123"
+    },
+
+    "http://localhost:5000/api/v1/client": {
+        "companyName": "abc",
+        "contactName": "def",
+        "phone": 9999911110,
+        "email": "abc@gmail.com",
+        "gstin": "gstno",
+        "panId": "abcpancard",
+        "tin": "tinID",
+        "vat": 1234,
+        "website": "sabbadia@google.com",
+        "currency": "INR",
+        "billingAddress": {
+            "address": "abc",
+            "country": "argentina",
+            "city": "bihar",
+            "state": "bihar",
+            "pincode": 411234
+        },
+        "shippingAddress": {
+            "address": "abc",
+            "country": "argentina",
+            "city": "bihar",
+            "state": "bihar",
+            "pincode": 411234
+        },
+        "otherInfo": {
+            "facebook": "haan chalate h",
+            "lst": 987654321,
+            "cst": 12345,
+            "servieTax": 2345
+        },
+        "notes": "kaam karo",
+        "active": true
+    },
+
+    "http://localhost:5000/api/v1/vendor": {
+        "companyName": "abc",
+        "contactName": "def",
+        "phone": 9999911110,
+        "email": "abc@gmail.com",
+        "gstin": "gstno",
+        "panId": "abcpancard",
+        "tin": "tinID",
+        "vat": 1234,
+        "website": "sabbadia@google.com",
+        "currency": "INR",
+        "billingAddress": {
+            "address": "abc",
+            "country": "argentina",
+            "city": "bihar",
+            "state": "bihar",
+            "pincode": 411234
+        },
+        "shippingAddress": {
+            "address": "abc",
+            "country": "argentina",
+            "city": "bihar",
+            "state": "bihar",
+            "pincode": 411234
+        },
+        "otherInfo": {
+            "facebook": "haan chalate h",
+            "lst": 987654321,
+            "cst": 12345,
+            "servieTax": 2345
+        },
+        "notes": "kaam karo",
+        "active": true
+    },
+
+    "http://localhost:5000/api/v1/items": {
+        "name": "Iphone",
+        "itemCode": "IA201",
+        "description": " Iphone 64GB version X",
+        "quantity": 10,
+        "unit": "Number"
+    },
+
+    "update CLient": {
+        "_id": "5f83c50efc33af06382e4365",
+        "billingAddress": { "address": "j", "country": "p", "city": "l", "state": "u", "pincode": 1 },
+        "companyName": "aaa",
+        "contactName": "",
+        "currency": "",
+        "email": "aaa@aa.com",
+        "gstin": "",
+        "notes": "",
+        "otherInfo": { "facebook": "", "lst": 1, "cst": 1, "serviceTax": 1 },
+        "panId": "",
+        "phone": 1,
+        "shippingAddress": { "address": "j", "country": "p", "city": "l", "state": "u", "pincode": 1 },
+        "tin": "",
+        "vat": "1",
+        "website": ""
+    }
+}
+
+// for client items and vendor use id and replace object to modify
+
+
+
+For count replace vendor with items and clients-- - > http: //localhost:5000/count/vendor
+
+
+
+    "http://localhost:5000/api/v1/invoice": {
+
+        "clientName": "dsdsad Roy1",
+        "invoiceNo": "Iddddddsdde12 123",
+        "invoiceDate": "2000-12-20T12:29:29.554+00:00",
+        "dueDate": "2020-12-20T15:29:29.554+00:00",
+        "PONo": "ABCPO1234",
+        "PODate": "2020-10-20T15:29:29.554+00:00",
+        "paymentTerms": "NA",
+        "termsAndConditions": "NA",
+        "privacyNotes": "Notes 12",
+        "items": [
+        {
+        "name": "item name",
+        "itemCode": "sampleitemcode",
+        "description": "sampledescription",
+        "quantity": 2,
+        "unitPrice" :20.6,
+        "unit": "sampleUnit",
+        "tax": "24",
+        "HSN": "56"
+        },
+        {
+        "name": "item name one",
+        "itemCode": "sampleitemcode",
+        "description": "sampledescription",
+        "quantity": 3,
+        "unitPrice" :40.6,
+        "unit": "sampleUnit",
+        "tax": "24",
+        "HSN": "56"
+        }
+        ]
+    }
+
+Export api : http://localhost:5000/api/v1/common//exportReport/item
